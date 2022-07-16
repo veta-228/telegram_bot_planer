@@ -1,0 +1,134 @@
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>routeadviser</title>
+    <link rel="shortcut icon" href="/img/icon.png" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+</head>
+
+<body style='overflow-x:hidden;'>
+
+    <div class="header">
+        <div class="logo">Route Adviser</div>
+
+    </div>
+    <div class="anno" id="anno">
+        <div class="anno_text">Route Adviser(RA) - это проект, который поможет Вам определиться с выбором наиболее комфортного маршрута. Он направлен на уменьшение проблем с общественным транспортом в г.Хабаровске</div>
+
+        <div class="variant"><img src="./img/green.svg" alt="">
+            <div class="mean">- низкая нагруженность</div>
+        </div>
+        <div class="variant"><img src="./img/yellow.svg" alt="">
+            <div class="mean">- средняя нагруженность</div>
+        </div>
+        <div class="variant"><img src="./img/red.svg" alt="">
+            <div class="mean">- высокая нагруженность</div>
+        </div>
+        <div class="variant"><img src="./img/grey.svg" alt="">
+            <div class="mean">- маршрут не активен</div>
+        </div>
+        <div class="alert">В окнах для ввода указывайте названия остановок</div>
+        <div class="anno_text2">Контакты:</div>
+        <div class="mail">veta.xalyutina@mail.ru</div>
+        <div class="vk">WA +791437573330</div>
+        <div class="arrbut" id="arrbut">
+            <img src="./img/arrow.svg" alt="">
+        </div>
+    </div>
+    <div class="anno2" id="anno2">
+        <div class="arrbut" id="arrbut2">
+            <img src="./img/arrow.svg" alt="">
+        </div>
+        <div class="anno_text">Route Adviser(RA) - это проект, который поможет Вам определиться с выбором наиболее комфортного маршрута. Он направлен на уменьшение проблем с общественным транспортом в г.Хабаровске</div>
+
+        <div class="variant"><img src="./img/green.svg" alt="">
+            <div class="mean">- низкая нагруженность</div>
+        </div>
+        <div class="variant"><img src="./img/yellow.svg" alt="">
+            <div class="mean">- средняя нагруженность</div>
+        </div>
+        <div class="variant"><img src="./img/red.svg" alt="">
+            <div class="mean">- высокая нагруженность</div>
+        </div>
+        <div class="variant"><img src="./img/grey.svg" alt="">
+            <div class="mean">- маршрут не активен</div>
+        </div>
+        <div class="alert">В окнах для ввода указывайте названия остановок</div>
+        <div class="anno_text2">Контакты:</div>
+        <div class="mail">veta.xalyutina@mail.ru</div>
+        <div class="vk">WA +791437573330</div>
+
+    </div>
+    <div class="starsup">
+        <img src="./img/stars.png" alt="">
+    </div>
+    <div class="down">
+        <div class="starsdown">
+            <img src="./img/starsdown.png" alt="">
+        </div>
+        <div class="bus">
+            <img src="./img/bus.png" alt="">
+        </div>
+    </div>
+
+    <div class="mainblock">
+        <div class="text">Укажи маршрут:</div>
+        <div class="datetime">
+            <input type="text" id="timeinput">
+            <input type="text" id="dateinput">
+        </div>
+        <input id="from" type="text" placeholder="Откуда?" list="stantions" oninput="getOptionFrom();" />
+        <input id="to" type="text" placeholder="Куда?" list="stantions" oninput="getOptionTo();" />
+
+        <datalist id="stantions">
+        </datalist>
+        <div class="search">Поиск</div>
+    </div>
+
+    <div class="popup">
+        <div class="popup_body">
+            <div class="popup_content">
+                <div class="popup_title">Результат поиска</div>
+                <div class="popup_close">
+                    <img src="./img/closebut.svg" alt="">
+                </div>
+                <div class="popup_table" id="popup_table">
+                    <div class="lines" id="lines">
+                        <div class="line"><img class="transport" src="./img/bus.svg" alt="">
+                            <div class="num">37</div>
+                            <img class="battery" src="./img/green.svg" alt="">
+                            <div class="timing">
+                                <img src="./img/clock.svg" alt="">
+                                <div class="time">каждые 5 минут</div>
+                            </div>
+                        </div>
+                        <div class="line"><img class="transport" src="./img/marsh.svg" alt="">
+                            <div class="num">8</div>
+                            <img class="battery" src="./img/yellow.svg" alt="">
+                            <div class="timing">
+                                <img src="./img/clock.svg" alt="">
+                                <div class="time">уже не ходит</div>
+                            </div>
+                        </div>
+                        <div class="line"><img class="transport" src="./img/tram.svg" alt="">
+                            <div class="num">1</div>
+                            <img class="battery" src="./img/red.svg" alt="">
+                            <div class="timing">
+                                <img src="./img/clock.svg" alt="">
+                                <div class="time">каждые 25 минут</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/script.js"></script>
+</body></html>
